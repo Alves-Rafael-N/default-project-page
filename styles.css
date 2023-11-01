@@ -20,6 +20,9 @@ header{
     height: 50px;
 }
 
+
+
+
 main{
     width: 1200px;
     height: 800px;
@@ -29,12 +32,21 @@ main{
     grid-template-areas: "logo logo"
     "esquerda direita";
 }
+
+
+/* container do primeiro row na main onde fica a logo*/
 .logo{
     grid-area: logo;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+img{
+    width: 400px;
+}
+
+
+/*containers da esquerda e direita ocupando a primeira e a segunda coluna do segundo row da main*/
 .esquerda{
     grid-area: esquerda;
 }
@@ -42,15 +54,14 @@ main{
     grid-area: direita;
 }
 
+
+
 footer{
     width: 100vw;
     height: 60px;
 }
-img{
-    width: 400px;
-}
 
-
+/* Cores do back-ground */
 .azul-claro{
     background-color: var(--azul-claro);
 }
